@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    background-color: rgba(250, 250, 250, 0.954);
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.navbar li{
+    display: inline-block;
+    }
+
+.navbar a{
+    margin: 2px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    padding: 5px;
+    transition: 1s;
+    
+}
+.h1a{
+    color: orange;
+}
+.logout a{
+    padding: 5px;
+    
+   color: red;
+}
+.navbar a:hover{
+background-color: orange; 
+padding: 5px; 
+border-radius: 5px;
+
+}
+
+

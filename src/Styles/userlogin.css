@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+
+.userlogin {
+    background-color: white;
+    height: 280px;
+    width: 500px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px black;
+}
+.form_inputs {
+    margin-top: 60px;
+}
+.i1{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 200px;
+}
+.i2{
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 200px;
+}
+
+.lgnbtn2{
+    margin-top: 20px;
+    height: 25px;
+    width: 100px;
+   background-color:#29c701;
+    border: none ;
+    width: 100px;
+    text-align: center;
+}
+
+.adh1 {
+    margin: auto;
+padding-top: 10px;
+}

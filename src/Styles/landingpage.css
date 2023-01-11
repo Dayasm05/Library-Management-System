@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    background-image: url('C:\Users\91959\Desktop\Library management System\public\Images\BIMG1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landingpage{
+    margin: auto;
+    margin-top: 200px;
+    border: 1px solid white;
+    height: 380px;
+    width: 680px; 
+    border-radius: 30px;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 0px 15px black;
+}
+.h1main{
+    padding-top: 20px;
+}
+.admin1{
+    border: 3px solid rgb(255, 128, 0); 
+    padding: 10px;
+  position: relative;
+  top: 60px;
+  right:160px;
+  text-decoration: none;
+  margin-top: 50px;
+
+}
+.user1{
+    border: 3px solid #29c701; 
+    padding: 10px;
+  position: relative;
+  top: 60px;
+  right: 10px;
+  
+  text-decoration: none;
+  margin-top: 50px; 
+}
+.adimnlogo{
+margin: 0px;
+margin-top: 30px;
+position: relative;
+left: 50px;
+}
+.userlogo{
+    margin: 0px;
+margin-top: 30px;
+position: relative;
+left: 215px;
+}
+

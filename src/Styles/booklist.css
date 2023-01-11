@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+
+.edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 5px 0px;
+    border: 2px solid orange;
+    box-shadow: 0px 0px 10px rgb(255, 192, 76);
+}
+
+.book_card {
+    text-align: start;
+    position: absolute;
+    left: 220px;
+    margin-bottom: 10px;
+
+}
+
+.booklisttt {
+    text-align: center;
+    color: black;
+
+}
+
+.btnn {
+    background-color: red;
+    border: none;
+    padding: 5px 9px;
+    color: white;
+    
+}
+.readd{
+    border: 2px solid red;
+    background-color: white;
+    color: black;
+    margin: 0px 5px;
+}
