@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import '../Styles/Readbook.css'
 
 
 
@@ -9,7 +10,7 @@ const ReadBooks = () => {
     useEffect(() => {
         
         let fetchData = async () => {
-            let response = await fetch(`http://localhost:7777/books/${params.id}`)
+            let response = await fetch(`http://localhost:8989/books/${params.id}`)
             let data = await response.json()
             setData(data)
         }
@@ -18,8 +19,10 @@ const ReadBooks = () => {
 
     return (
         <div className="readbook">
-            <h1>{data.title}</h1>
-            <h4>{data.shortDescription}</h4>
+            <h1> Title : {data.title}</h1>
+            <b>"Short Description"</b>
+            <h4> {data.shortDescription}</h4>
+            <b>"Long Description"</b>
             <p>{data.longDescription}</p>
 
         </div>

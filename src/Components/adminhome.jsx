@@ -17,6 +17,7 @@ const Adminhome = () => {
                 <Route path="/book-list" element={<Booklist/>} />
                 <Route path="/user-list" element={<Userslist/>} />
                 <Route path="/book-list/:id" element={<ReadBooks/>}/>
+                
                 <Route path= "/add-user" element={<Adduser/>}/>
                 <Route path="/add-book" element={<Addbooks/>}/>
             </Routes>

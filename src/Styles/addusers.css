@@ -12,6 +12,7 @@ body{
     text-align: center;
     font-weight: bold;
     box-shadow: 0px 0px 25px rgb(254, 199, 98);
+    border-radius: 20px;
     
 }
 .username, .userage, .user_phone, .user_email{
@@ -31,4 +32,10 @@ body{
     padding: 8px 20px;
     border: none;
     
+}
+.add_user input{
+    position: absolute;
+    left: 85px;
+    
+
 }

@@ -1,0 +1,9 @@
+.readbook h1,h4,p{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    
+    
+}
+.readbook p{
+    font-weight: bold;
+}

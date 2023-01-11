@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import '../Styles/booklist.css'
+import { useLocation } from "react-router-dom";
 
 
 
 const Booklist = () => {
     let [Books, setBooks] = useState([])
+    let location = useLocation()
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch('http://localhost:2122/books')
+            let response = await fetch('http://localhost:8989/books')
             let book = await response.json()
             setBooks(book)
         }
@@ -19,7 +21,7 @@ const Booklist = () => {
     let handleDelete = (id, title) => {
         // setBooks(Books.filter(x => x.id !== id))
         // alert(`${title} will br removed !`)?>?>
-        fetch(`http://localhost:2122/books/${id}`, {
+        fetch(`http://localhost:8989/books/${id}`, {
             method: 'DELETE'
 
         });
@@ -29,7 +31,12 @@ const Booklist = () => {
 
     let navigate = useNavigate()
     let handleRead = (id) => {
-        navigate(`/admin/book-list/${id}`)
+        if (location.pathname == 'admin/book-list') {
+            navigate(`/admin/book-list/${id}`)
+            
+        } else {
+            navigate(`/user/book-list/${id}`)
+        }
     }
 
     return (
@@ -48,7 +55,7 @@ const Booklist = () => {
                                 <h3>Author:{book.authors}</h3>
                                 <h5> pageCount:{book.pageCount}</h5>
                                 <button className="readd" onClick={() => handleRead(book.id)}>Read more</button>
-                                <button class="btnn" onClick={() => handleDelete(book.id, book.title)}>Delete</button>
+                                { location.pathname == '/admin/book-list' && <button class="btnn" onClick={() => handleDelete(book.id, book.title)}>Delete</button> }
 
 
 
