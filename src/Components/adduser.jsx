@@ -13,7 +13,7 @@ let navigate = useNavigate()
     let handlesubmitt = (e) => {
         e.preventDefault()
         let UserData = {name,age,email,phonenumber}
-        fetch('http://localhost:8989/users',{
+        fetch('http://localhost:1000/books',{
             method : 'POST',
             headers : {'Content-Type':'application/json'},
             body : JSON.stringify(UserData)

@@ -8,14 +8,17 @@ const ReadBooks = () => {
     let params = useParams()
     let [data, setData] = useState([])
     useEffect(() => {
-        
+
         let fetchData = async () => {
-            let response = await fetch(`http://localhost:8989/books/${params.id}`)
+            let response = await fetch(`http://localhost:1000/books/${params.id}`)
             let data = await response.json()
             setData(data)
         }
         fetchData()
-    })
+    }
+    )
+
+    
 
     return (
         <div className="readbook">

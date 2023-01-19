@@ -1,0 +1,48 @@
+/* body{
+    background-image: url('https://www.greenwichlibrary.org/wp-content/uploads/2018/09/DSC_2278-2-300x117.jpg');
+   
+} */
+
+.admin_db1 {
+
+    background-color: rgba(255, 255, 255, 0.735);
+    width: 950px;
+    height: 150px;
+    margin-top: 100px;
+    text-align: end;
+}
+
+
+.admin_db1 h1 {
+   text-align: right;
+    padding-right: 50px;
+    font-size: 45px;
+    border-bottom: 2px solid rgb(246, 183, 65);
+    display: inline;
+    color: black;
+}
+
+
+.admin_image1 {
+    margin-top: 150px;
+}
+
+
+.admin_content {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.963);
+    width: 750px;
+    position: relative;
+    left: 370px;
+    bottom: 100px;
+}
+
+
+.head_for_admin {
+    padding-top: 10px;
+}
+.mainforadmin h2{
+    border-bottom: 2px solid rgb(246, 183, 65);
+    display: inline;
+}
+

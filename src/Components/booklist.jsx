@@ -10,7 +10,7 @@ const Booklist = () => {
     let location = useLocation()
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch('http://localhost:8989/books')
+            let response = await fetch('http://localhost:1000/books')
             let book = await response.json()
             setBooks(book)
         }
@@ -21,7 +21,7 @@ const Booklist = () => {
     let handleDelete = (id, title) => {
         // setBooks(Books.filter(x => x.id !== id))
         // alert(`${title} will br removed !`)?>?>
-        fetch(`http://localhost:8989/books/${id}`, {
+        fetch(`http://localhost:1000/books/${id}`, {
             method: 'DELETE'
 
         });
@@ -31,7 +31,7 @@ const Booklist = () => {
 
     let navigate = useNavigate()
     let handleRead = (id) => {
-        if (location.pathname == 'admin/book-list') {
+        if (location.pathname =='/admin/book-list') {
             navigate(`/admin/book-list/${id}`)
             
         } else {

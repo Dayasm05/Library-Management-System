@@ -1,0 +1,42 @@
+.userdb_content1 {
+    background-color: white;
+    width: 900px;
+    position: absolute;
+    left: 300px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.838);
+}
+
+.userdb_content1 h1 {
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 191, 255);
+    display: inline;
+
+}
+
+.userdb_content2 {
+    position: absolute;
+    top: 400px;
+}
+.userdb_content2 img{
+    position: relative;
+    left: 320px;
+    top: 50px;
+}
+
+.userdb_text {
+    position: relative;
+    bottom: 80px;
+    left: 325px;
+    background-color: white;
+    width: 700px;
+    position: relative;
+    left: 390px;
+   top: -30px;
+}
+.userdb_content3 img{
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: max-content;
+   align-items: center;
+}

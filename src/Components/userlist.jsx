@@ -6,7 +6,7 @@ const Userslist = () => {
     let [user, setUser] = useState([])
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch('http://localhost:8989/users')
+            let response = await fetch('http://localhost:1000/users')
             let data = await response.json()
             setUser(data)
         }

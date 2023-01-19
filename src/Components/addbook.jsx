@@ -21,7 +21,7 @@ const Addbooks = () => {
         let bookdata = {title, authors, categories, pageCount, shortDescription, longDescription, thumbnailUrl}
 
         //posting to server
-        fetch('http://localhost:8989/books',{
+        fetch('http://localhost:1000/books',{
             method : 'POST',
             headers :{'Content-Type':'application/json'},
             body:JSON.stringify(bookdata)
